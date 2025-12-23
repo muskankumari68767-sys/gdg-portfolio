@@ -917,3 +917,519 @@ nav a.active{
         opacity: 1;
     }
 }
+.skills-subtitle {
+    text-align: center;
+    margin-bottom: 50px;
+    opacity: 0.8;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    animation: fill 1.5s ease forwards;
+}
+
+/* Skill Levels */
+.html { width: 90%; background: #00eaff; }
+.css { width: 85%; background: #00ff9c; }
+.cpp { width: 75%; background: #ff7675; }
+.java { width: 65%; background: #feca57; }
+.python { width: 60%; background: #48dbfb; }
+.progress-bar.genai {
+    width: 80%;
+    background: linear-gradient(90deg, #8e2de2, #4facfe);
+}
+
+
+@keyframes fill {
+    from { width: 0; }
+}
+
+/* Glow effect */
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 25px rgba(0,234,255,0.6);
+}
+
+/* Highlight card */
+.skill-card.highlight {
+    border: 1px solid #00eaff;
+    background: linear-gradient(135deg, rgba(0,234,255,0.15), rgba(155,108,255,0.15));
+}
+
+/* Tools Section */
+.tools {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.tools h2 {
+    color: #00eaff;
+    margin-bottom: 20px;
+}
+
+.tool-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.tool-list span {
+    padding: 10px 18px;
+    border-radius: 20px;
+    border: 1px solid #00eaff;
+    background: rgba(0,234,255,0.15);
+    transition: all 0.3s ease;
+}
+
+.tool-list span:hover {
+    background: #00eaff;
+    color: #000;
+}
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #222;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 14px;
+    position: relative;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 6px;
+    animation: load 1.5s ease-in-out forwards;
+}
+
+/* Percentage text */
+.progress-bar span {
+    position: absolute;
+    right: 0;
+    top: -22px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #00eaff;
+}
+@keyframes load {
+    from { width: 0; }
+}
+/* SKILLS SECTION */
+.skills-page {
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.skills-subtitle {
+    color: #aaa;
+    margin-bottom: 60px;
+    font-size: 15px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 35px;
+}
+
+/* CARD */
+.skill-card {
+    background: rgba(0, 0, 0, 0.85);
+    border-radius: 18px;
+    padding: 35px 25px;
+    border: 2px solid #00eaff;
+    box-shadow: 0 0 25px rgba(0, 234, 255, 0.2);
+    transition: all 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 0 45px rgba(0, 234, 255, 0.6);
+}
+
+/* ICON */
+.skill-card img {
+    width: 70px;
+    margin-bottom: 18px;
+}
+
+/* TITLE */
+.skill-card h3 {
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+/* TEXT */
+.skill-card p {
+    font-size: 14px;
+    color: #ccc;
+    margin-bottom: 18px;
+}
+
+/* PROGRESS BAR */
+.progress {
+    width: 100%;
+    height: 8px;
+    background: #222;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress span {
+    display: block;
+    height: 100%;
+    border-radius: 20px;
+    animation: fill 1.5s ease forwards;
+}
+
+/* COLORS */
+.progress.green span { background: #00ff99; }
+.progress.red span { background: #ff6b6b; }
+.progress.yellow span { background: #ffd166; }
+.progress.cyan span { background: #4ddcff; }
+.progress.purple span { background: #9b5cff; }
+.progress span { background: #00eaff; }
+
+/* ANIMATION */
+@keyframes fill {
+    from { width: 0; }
+}
+/* PERCENT TEXT */
+.skill-percent {
+    margin-top: 12px;
+    font-size: 16px;
+    color: #00eaff;
+    font-weight: 600;
+}
+
+/* 3D TILT EFFECT */
+.tilt {
+    transform-style: preserve-3d;
+    transition: transform 0.15s ease;
+}
+/* ================= AI TOOLS SLIDER ================= */
+
+.ai-tools-section {
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.section-title {
+    color: #00eaff;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.ai-slider {
+    overflow: hidden;
+    position: relative;
+}
+
+.ai-track {
+    display: flex;
+    width: max-content;
+    animation: scrollAI 18s linear infinite;
+}
+
+.ai-slider:hover .ai-track {
+    animation-play-state: paused;
+}
+
+.ai-card {
+    min-width: 180px;
+    background: rgba(0,0,0,0.85);
+    border: 2px solid #00eaff;
+    border-radius: 16px;
+    padding: 25px;
+    margin: 0 15px;
+    box-shadow: 0 0 20px rgba(0,234,255,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ai-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 40px rgba(0,234,255,0.8);
+}
+
+.ai-card img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+.ai-card p {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Slider Animation */
+@keyframes scrollAI {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ai-card {
+        min-width: 140px;
+        padding: 18px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+/* ===== AI 3D CAROUSEL ===== */
+
+.ai-carousel-section {
+    padding: 120px 8%;
+    text-align: center;
+}
+
+.carousel {
+    perspective: 1200px;
+    margin-top: 60px;
+}
+
+.carousel-track {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    transform-style: preserve-3d;
+    animation: rotateCarousel 20s infinite linear;
+}
+
+.carousel:hover .carousel-track {
+    animation-play-state: paused;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 180px;
+    height: 180px;
+    transform-style: preserve-3d;
+    background: rgba(0,0,0,0.9);
+    border: 2px solid #00eaff;
+    border-radius: 18px;
+    box-shadow: 0 0 25px rgba(0,234,255,0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform-origin: center center -350px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.carousel-item img {
+    width: 60px;
+    margin-bottom: 12px;
+}
+
+.carousel-item p {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* Glow on front */
+.carousel-item:hover {
+    box-shadow: 0 0 45px rgba(0,234,255,0.9);
+}
+
+/* Rotation animation */
+@keyframes rotateCarousel {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .carousel-item {
+        width: 140px;
+        height: 140px;
+        transform-origin: center center -260px;
+    }
+}
+.social-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.hero-cta {
+    margin-top: 30px; /* pushes Hire Me down */
+}
+
+.hire-btn {
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 30px;
+    background: #00eaff;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.hire-btn:hover {
+    background: transparent;
+    color: #00eaff;
+    box-shadow: 0 0 20px rgba(0,234,255,0.8);
+}
+/* =========================
+   HERO ACTIONS FIX
+========================= */
+.hero-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+/* =========================
+   STATS SECTION
+========================= */
+.stats {
+    padding: 80px 10%;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.stat-card {
+    background: rgba(0,0,0,0.7);
+    border: 2px solid #00eaff;
+    border-radius: 18px;
+    padding: 35px 20px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,234,255,0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 0 35px rgba(0,234,255,0.6);
+}
+
+.stat-card h2 {
+    font-size: 42px;
+    color: #00eaff;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    color: #ccc;
+    font-size: 16px;
+}
+/* ===============================
+   FLOATING TECH ICONS BACKGROUND
+================================ */
+
+.floating-icons {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.floating-icons span {
+    position: absolute;
+    bottom: -100px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgba(0, 234, 255, 0.15);
+    text-shadow: 0 0 12px rgba(0, 234, 255, 0.4);
+    animation: floatUp linear infinite;
+    animation-duration: calc(14s + var(--i) * 3s);
+    right: calc(var(--i) * 7%);
+}
+
+@keyframes floatUp {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10% { opacity: 1; }
+    to {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+/* Keep content above icons */
+.hero,
+header,
+section,
+footer {
+    position: relative;
+    z-index: 2;
+}
+/* FLOATING LOGOS BACKGROUND */
+.floating-logos {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.floating-logos img {
+    position: absolute;
+    width: 40px;
+    opacity: 0.25;
+    filter: drop-shadow(0 0 6px rgba(0,234,255,0.4));
+    animation: floatLogo linear infinite;
+    animation-duration: calc(16s + var(--i) * 0.01s);
+    left: calc(var(--i) * 7%);
+    bottom: -60px;
+}
+
+@keyframes floatLogo {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(-120vh) rotate(360deg);
+    }
+}
+
+/* responsive size */
+@media (max-width: 768px) {
+    .floating-logos img {
+        width: 28px;
+        opacity: 0.18;
+    }
+}
+

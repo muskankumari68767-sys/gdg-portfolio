@@ -7,15 +7,37 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="tech-bg"></div>
+    <!-- FLOATING TECH ICONS BACKGROUND -->
+<!-- FLOATING TECH ICONS BACKGROUND -->
+ 
 
+
+    <!-- TECH BACKGROUND -->
+    <div class="tech-bg"></div>
+    <!-- FLOATING TECH LOGOS -->
+<div class="floating-logos">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" style="--i:1">
+    <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" style="--i:2">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" style="--i:3">
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" style="--i:4">
+    <img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" style="--i:5">
+    <img src="https://cdn-icons-png.flaticon.com/512/6132/6132222.png" style="--i:6">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111288.png" style="--i:7">
+    <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" style="--i:8">
+
+    <!-- extra logos for higher density -->
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919851.png" style="--i:9">
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919830.png" style="--i:10">
+    <img src="https://cdn-icons-png.flaticon.com/512/919/919832.png" style="--i:11">
+    <img src="https://cdn-icons-png.flaticon.com/512/3665/3665923.png" style="--i:12">
+</div>
 
 
     <!-- HEADER -->
     <header>
         <h2 class="logo">Muskan.dev</h2>
         <nav>
-            <a href="index.html" style="color:#00eaff;">Home</a>
+            <a href="index.html" class="active">Home</a>
             <a href="about.html">About</a>
             <a href="skills.html">Skills</a>
             <a href="projects.html">Projects</a>
@@ -25,52 +47,89 @@
 
     <!-- HERO SECTION -->
     <section class="hero fade">
+
+        <!-- LEFT CONTENT -->
         <div class="hero-text">
-            <h1>Hello, I'm <span>Muskan</span></h1>
-            <p id="typing">
-        </p>
+
+            <h1>
+                Hello, I'm <span class="neon-text">Muskan</span>
+            </h1>
+
+            <h2 id="typing"></h2>
 
             <ul class="hero-highlights">
-                <li>💻 Front-End Development</li>
+                <li>💻 Front-End Web Developer</li>
                 <li>🚀 C++ | Python | Java | Generative AI</li>
                 <li>🎯 2nd Year CSE Student | GL Bajaj</li>
             </ul>
 
-            <!-- SOCIAL BUTTONS -->
+            <!-- SOCIAL LINKS -->
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/muskan-kumari-b24362307/"
-   target="_blank"
-   rel="noopener noreferrer">
-   LinkedIn
-</a>
+                   target="_blank" rel="noopener noreferrer">
+                    LinkedIn
+                </a>
 
-                <a href="https://github.com/muskankumari68767-sys/" target="_blank"
-                    rel="noopener noreferrer">
-                    GitHub</a>
+                <a href="https://github.com/muskankumari68767-sys"
+                   target="_blank" rel="noopener noreferrer">
+                    GitHub
+                </a>
             </div>
 
-            <!-- HIRE BUTTON BELOW BOTH -->
-            <a href="contact.html" class="hire-btn bottom-btn">Hire Me</a>
+            <div class="hero-cta">
+                
+            <a href="contact.html" class="hire-btn">Hire Me</a>
+            </div>
+
         </div>
 
-        <!-- GLOW BEHIND IMAGE -->
-        <div class="hero-photo-glow"></div>
-
-        <!-- IMAGE BOX -->
-        <div class="hero-photo-box">
-            <img src="profile-hero.jpg" alt="Muskan">
+        <!-- RIGHT IMAGE -->
+        <div class="hero-image-wrapper">
+            <div class="hero-photo-glow"></div>
+            <div class="hero-photo-box">
+                <img src="profile-hero.jpg" alt="Muskan">
+            </div>
         </div>
+
     </section>
+    <!-- STATS SECTION -->
+<section class="stats fade">
+    <div class="stats-container">
+
+        <div class="stat-card">
+            <h2><span class="count" data-target="10">0</span>+</h2>
+            <p>Projects Completed</p>
+        </div>
+
+        <div class="stat-card">
+            <h2><span class="count" data-target="5">0</span>+</h2>
+            <p>Technologies Learned</p>
+        </div>
+
+        <div class="stat-card">
+            <h2><span class="count" data-target="2">0</span></h2>
+            <p>Years of Coding</p>
+        </div>
+
+        <div class="stat-card">
+            <h2><span class="count" data-target="100">0</span>%</h2>
+            <p>Passion for Learning</p>
+        </div>
+
+    </div>
+</section>
+
 
     <!-- FOOTER -->
     <footer>
         <p>© 2025 Muskan — All Rights Reserved</p>
     </footer>
-    
+
+    <!-- SCROLL TO TOP -->
     <button id="scrollTopBtn">↑</button>
+
+    <!-- JS -->
     <script src="script.js"></script>
-
-
 
 </body>
 </html>
